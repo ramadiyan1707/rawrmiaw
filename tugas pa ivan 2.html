@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     body {
+     font-family: Arial, sans-serif;
+     background-color: rgb(255, 255, 255);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+}
+
+form {
+    background: rgb(192, 75, 75);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px black(0,0,0,0,1);
+    width: 500px;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+}
+
+tr {
+    margin-bottom: 12px;
+    display: block;
+}
+
+td:first-child {
+    width: 180px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+textarea {
+    height: 70px;
+}
+
+.btn-submit {
+    background: rgb(9, 8, 0);
+    color: rgb(255, 253, 253);
+    border: none;
+    padding: 10px;
+    width: 90%;
+    margin-top: 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn-submit :hover {
+    background: blue;
+}
+
+.btn-reset {
+    background: rgb(255, 0, 0);
+    color: rgb(188, 3, 3);
+    border: none;
+    padding: 10px;
+    width: 90%;
+    margin-top: 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn-submit :hover {
+    background: rgb(255, 255, 255);
+}
+
+
+</style>
+<body>
+    <form action="#">
+    <fieldset>
+        <legend align="Center">Login</legend>
+
+        <table>
+            <tr>
+            <td><label for="Nama">Nama Lengkap :</label></td>
+            <td><input type="text" name="nama" id="nama"></td>
+            </tr>
+
+            <tr>
+            <td><label for="password">Password :</label></td>
+            <td><input type="password" name="password" id="password"></td>
+            </tr>
+
+            <tr>
+            <td><label for="konfirmasi password">Konfirmasi Password :</label></td>
+            <td><input type="password" name="konfirmasi password id" id="konfirmasi password"></td>
+            </tr>
+
+            <tr>
+            <td><label for="username">Username :</label></td>
+            <td><input type="text" name="username" id="username"></td>
+            </tr>
+
+            <tr>
+            <td><label for="pendapat">Pendapat Anda :</label></td>
+            <td><textarea name="pendapat" id="pendapat" rows="4" cols="25"></textarea></td>
+            </tr>
+
+            <tr>
+            <td><label>Jenis Kelamin</label></td>
+            <td><input type="radio" name="gender" value="pria"> Pria<br>
+            <input type="radio" name="gender" value="wanita"> Wanita<br>
+            </td>
+            </tr>
+
+            <tr>
+            <td><br><label for="genre film">Genre Musik yang Disukai :</label></td></tr>
+            <tr><td><input type="checkbox" name="genre film yang disukai" id="genre musik yang disukai" value="comedy"> Comedy<br>
+            <input type="checkbox" name="genre film" id="genre film" value="romance"> Romance<br>
+            <input type="checkbox" name="genre film" id="genre film" value="action"> Action<br>
+            <input type="checkbox" name="genre film" id="genre film" value="Horor"> Horor<br>
+            <input type="checkbox" name="genre film" id="genre film" value="fantasy"> Fantasy<br>
+            </td>
+            </tr>
+
+            <tr>
+            <td><br><label for="aplikasi nonton">Aplikasi Nonton</label></td>
+            <td><br><select name="aplikasi nonton" id="aplikasi nonton">
+                <option value="#">Pilih Salah Satu</option>
+                <option value="netflix">Netflix</option>
+                <option value="vidio">Vidio</option>
+                <option value="disney+">Disney+</option>
+                <option value="viu">Viu</option>
+      </select></td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+
+    <!-- Submit & Reset  -->
+     <table>
+     <tr>
+     <td><button type="submit" class="btn-submit">Daftar</button>
+     <button type="reset">Hapus</button></td>
+     </tr>
+     </table>
+     </form>
+
+</body>
+</html>
